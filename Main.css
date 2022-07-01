@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Images/Clouds.jpeg');
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:grid;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Milonga', cursive;
+    letter-spacing: 2px;
+    word-spacing: 17px;
+    text-shadow: 3px 2px 2px darkslategrey;
+}
+h2{
+    text-align: center;
+    margin-top: 5vh;
+}
+#img2{
+    margin-left: 35vh;
+}
+.place{
+    padding: 2vh;
+    font-size: 25px;
+}
+.main{
+    color: aliceblue;
+    margin: 15vh;
+    margin-left: 30vh;
+    height: 65vh;
+    width: 120vh;
+    background-image: url('Images/rainn.jpg');
+    background-repeat: no-repeat;
+    background-size: 120vh;
+    border: 7px solid  rgb(57, 86, 106) ;
+    border-radius: 9px;
+}
+
+
+
+form {
+
+    /* width:500px;
+    height:250px; */
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    margin-top: 35vh;
+    margin-left: 70vh;
+    left: 0;
+    right: 0;
+    border: 1px solid rgba(201, 178, 178, 0);
+    width: 400px;
+    background-image: linear-gradient(rgba(151, 144, 196, 0), rgba(128, 73, 117, 0));
+}
+
+
+label {
+    font-family: 'Spectral', serif;
+    font-weight: 5px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px lightslategrey;
+}
+
+input {
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 20px;
+    border: none;
+    width: 200px;
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family: 'Prata', serif;
+}

@@ -1,38 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Update</title>
+    <title>Main Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=IM+Fell+Great+Primer+SC&family=Milonga&family=Prata&family=Spectral:ital,wght@1,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="Main.css">
 </head>
 
 <body>
-
-    <h1>Welcome to Todays Weather Report</h1>
-
+    <h2>Today's Weather Forcast</h2>
     <div class="main">
+        <div class="place">
+            <h3>Weather in:- </h3>
+        </div>
 
         <div class="image">
             <img id="img2" src="Images/cloud-2.png" alt="cloud photo">
         </div>
 
         <div class="mainForm">
-            <form class="form1" action="Main.html">
+            <form class="form1">
+
+                
                 <label>City:- </label>
-                <input type="text" placeholder="City Name">
-                <br><br>
+                <input type="text"><br>
                 <label>Country:- </label>
-                <input type="text" placeholder="Country Name">
-                <br><br> 
-                <button id="button1"> &nbsp; Submit &nbsp;</button>
-               
+                <input type="text"><br>
+                <label>Temperature:- </label>
+                <input type="text"><br>
+                <label>Min.Temp:- </label>
+                <input type="text"><br>
+                <label>Max.Temp:- </label>
+                <input type="text">
+
 
             </form>
         </div>
