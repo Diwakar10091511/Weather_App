@@ -39,6 +39,7 @@ h2{
     background-repeat: no-repeat;
     background-size: 120vh;
     border: 7px solid  rgb(57, 86, 106) ;
+    border-style: outset;
     border-radius: 9px;
 }
 
