@@ -5,14 +5,8 @@ let minTemp=document.getElementById("minTemperature");
 let maxTemp=document.getElementById("maxTemperature");
 // let cGiven;
 // let couGiven;
-function fetchDetails()
-{
-    var cgiven=document.getElementById("cityDetail").value;
-    var cougiven=document.getElementById("countryDetail").value;
-    
-    // document.getElementsByClassName("form1").action="index2.html";
-    window.open('index2.html',"_black");
-}
+cName.value=localStorage.getItem("cityD");
+couName.value=localStorage.getItem("countryD");
 // cName.value=cgiven;
 let date=new Date();
 let formatDate=date.toLocaleString(date);
