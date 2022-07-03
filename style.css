@@ -48,10 +48,11 @@ h1{
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    overflow:hidden;
 }
 @keyframes moving {
     from{left:0}
-    to{left:90%};
+    to{left:90vw};
 }
 .mainForm{
     display: grid;
