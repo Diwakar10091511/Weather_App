@@ -103,10 +103,16 @@ label{
 input {
     display:table-cell;
     background-color: rgba(240, 248, 255, 0);
-    font-size: 25px;
+    background-color:rgb(167, 202, 221);
+    font-size: 20px;
     width: 17vw;
     padding: 2px;
     padding-left: 10px;
     border-radius: 5px;
     font-family: 'Prata', serif;
+}
+#error{
+    font-size:25px;
+    background-color:red ;
+    text-align: center;
 }

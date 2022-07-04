@@ -1,58 +1,42 @@
-
-// const http=require("http");
-// const fs=require("fs");
-// const requests=require("requests");
-
-
-// // localStorage.setItem("cityD","satna");
-// // var city=localStorage.getItem("cityD","satna");
-
-
-
-// // const server=http.createServer((req,res)=>
-// // {
-// if(req.url=="/")
-// {
-//     requests(
-//         `https://api.openweathermap.org/data/2.5/weather?q=Satna,In&APPID=ac731293d11478fe443d41ecac1c4b4b`)
-        
-//     .on("data",(chunk)=>
-//     {
-//         let objData=JSON.parse(chunk);
-//         let arrData=[objData];
-//         console.log(`${Math.round((arrData[0].main.temp-273.00)*100)/100}`);
-//     })
-
-//     .on("end",(err)=>
-//     {
-//         if(err)
-//         console.log(err)
-//     });
-// }
-// //     }
-// //     let mainData=fs.readFileSync("index.html","utf-8");
-// //     // console.log(mainData);
-// //     res.write(mainData);
-// //     res.end();
-
-// // });
-
-// // server.listen(8000,"127.0.0.1");
-
-
-
-
-
 let cName=document.getElementById("cityName");
 let couName=document.getElementById("countryName");
-// let temp=document.getElementById("temperature");
-// let minTemp=document.getElementById("minTemperature");
-// let maxTemp=document.getElementById("maxTemperature");
-cName.value=localStorage.getItem("cityD");
-couName.value=localStorage.getItem("countryD");
+let temp=document.getElementById("temperature");
+let weatherCond=document.getElementById("weatherCond");
+let humidity=document.getElementById("humidity");
+let capitalise=localStorage.getItem("cityD");
+let cap=capitalise.charAt(0).toUpperCase();
+capitalise=capitalise.substr(1);
+capitalise=cap+capitalise;
+cName.value=capitalise;
+couName.value="India";
 setInterval(()=>
 {
     let date=new Date();
     let formatDate=date.toLocaleString(date);
     document.getElementById("sideHeading").innerHTML=formatDate;
 },1000);
+
+let body=document.querySelector('body');
+const writeitup=()=>
+{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cName.value},In&APPID=ac731293d11478fe443d41ecac1c4b4b`)
+    .then((res)=> res.json())
+    .then((data)=>
+    {
+        // console.log(data);
+        let temperatureValue=data.main.temp;
+        temperatureValue=Math.round(temperatureValue-273);
+        temp.value=temperatureValue;
+        weatherCond.value=data.weather[0].main;
+        humidity.value=data.main.humidity;
+
+    })
+    .catch((err)=> 
+    {
+        document.getElementById("error").innerHTML="Sorry No data Found for given city";
+        // console.log("there is an error"+err)
+    });
+}
+
+
+body.addEventListener('load',writeitup());
