@@ -4,5 +4,10 @@ function fetchDetails()
     // var cougiven=document.getElementById("countryDetail").value;
     localStorage.setItem("cityD",cgiven);
     // localStorage.setItem("countryD",cougiven);
-    location.href="index2.html";
+    if (cgiven=" ") {
+        alert("Please enter your city name");
+    } else {
+     location.href="index2.html";    
+    }
+   
 }

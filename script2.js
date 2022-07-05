@@ -33,10 +33,12 @@ const writeitup=()=>
     })
     .catch((err)=> 
     {
-        document.getElementById("error").innerHTML="Sorry No data Found for given city";
+        
+        alert("No data Found");
         // console.log("there is an error"+err)
     });
 }
 
 
 body.addEventListener('load',writeitup());
+//8
