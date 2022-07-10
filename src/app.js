@@ -1,7 +1,7 @@
 const express=require("express");
 const path=require("path");
 const hbs=require("hbs");
-
+let port= process.env.PORT || 8000;
 
 const app=express();
 let staticPath=path.join(__dirname,"../public");
@@ -21,4 +21,4 @@ app.get("/index2",(req,res)=>
 {
     res.render("index2.hbs");
 });
-app.listen(8000);
+app.listen(port);
