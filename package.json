@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Diwakar10091511/Weather_App#readme",
   "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
     "requests": "^0.3.0"
   }
 }

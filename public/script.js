@@ -7,7 +7,7 @@ function fetchDetails()
     if (cgiven=="") {
         alert("Please enter your city name");
     } else {
-     location.href="index2.html";    
+     location.href="/index2";    
     }
    
 }

@@ -116,3 +116,10 @@ input {
     background-color:red ;
     text-align: center;
 }
+
+@media screen and (max-width: 768px){
+    .main{
+        width:80%;
+    }
+    
+}
