@@ -136,4 +136,10 @@ input{
             animation-duration:2s;
             display:none;
         }
+        #headingContent{
+            font-size:2vh;
+        }
+        #headingSideContent{
+            font-size:2vh;
+        }
 }

@@ -121,5 +121,19 @@ input {
     .main{
         width:80%;
     }
-    
+    #headingContent{
+        font-size:2vh;
+    }
+    #headingSideContent{
+        font-size:2vh;
+    }
+    label,input{
+        font-size: 10px;
+    }
+    #formHeading{
+        font-size:10px;
+    }
+    #sideHeading{
+        font-size:7px;
+    }
 }
